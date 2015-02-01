@@ -9,13 +9,13 @@ body {
 	background-size: 1px 400px;
 	background-repeat: repeat-x;
 
-	font-family: Arial, Helvetica, sans-serif;;
+	font-family: Arial, Helvetica, sans-serif;
+
+	padding: 0;
+	margin: 0;
 }
 
 nav {
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: auto;
 
@@ -24,4 +24,33 @@ nav {
 	background: url("footer_lodyas.png");
 
 	color: #ffffff;
+}
+
+li {
+	display: inline-block;
+}
+
+.video-frame div,
+.video-frame iframe {
+	margin-left: 50px;
+}
+
+.video-frame {
+	display: none;
+
+}
+
+.video-frame:target {
+	display: block;
+}
+
+.button {
+	margin: 0 15px;
+	padding: 5px 10px;
+
+	background-color: #125417;
+	color: #ffffff;
+	border: 2px solid #0b330d;
+
+	border-radius: 3px;
 }
