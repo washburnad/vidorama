@@ -1,13 +1,6 @@
 <ul>
-	<li class="nav"><%= link_to "Monkey Drums", "#monkey", :class => "button" %></li>
-	<li class="nav"><%= link_to "Seal Surfs", "#seal", :class => "button" %></li>
+	<% @videolinks.each do |link| %>
+		<li class="nav"><%= link_to link.title, "#", :class => "button" %></li>
+	<% end %>
 </ul>
 
-<div class="video-frame" id="monkey">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/PbB5ShkrVWk" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video-frame" id="seal">
-	<div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
-	<div class="fb-post" data-href="https://www.facebook.com/video.php?v=841847799158703" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/video.php?v=841847799158703">Post</a> by <a href="https://www.facebook.com/gosocialhighlights">Go Social</a>.</div></div>
-</div>
