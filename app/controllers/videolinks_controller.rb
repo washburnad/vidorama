@@ -21,6 +21,21 @@ class VideolinksController < ApplicationController
 		@videolink = Videolink.find(params[:id])
 	end
 
+	def destroy
+		@videolink = Videolink.find(params[:id])
+		@videolink.destroy
+		redirect_to root_path
+	end
+
+	def edit
+		@videolink = Videolink.find(params[:id])
+	end
+
+	def update
+		@videolink = Videolink.find(params[:id])
+		@videolink.update_attributes(videolinks_params)
+		redirect_to videolink_path(@videolink)
+	end
 
 	private
 

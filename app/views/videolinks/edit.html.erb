@@ -1,0 +1,8 @@
+<div class='form-box'>
+	<h1>Edit Videolink</h1>
+	<%= simple_form_for @videolink do |f| %>
+		<%= f.input :title %>
+		<%= f.input :link %>
+		<%= f.submit 'Update Videolink', :class => 'button' %>
+	<% end %>
+</div>

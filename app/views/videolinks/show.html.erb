@@ -1,3 +1,6 @@
 <div class='video-box'>
+	<h1><%= @videolink.title %></h1>
 	<iframe width="560" height="315" src=<%= "https://www.youtube.com/embed/" + @videolink.link %> frameborder="0" allowfullscreen></iframe>
+	<%= link_to 'Edit', edit_videolink_path(@videolink), :class => 'button' %>
+	<%= link_to 'Delete', videolink_path(@videolink), :class => 'button', :method => :delete %>
 </div>
