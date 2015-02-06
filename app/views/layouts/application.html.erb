@@ -9,7 +9,12 @@
 <body>
 
 <nav>
-	<h1>Vidorama</h1>
+	<div class='nav-left'>
+		<h1>Vidorama</h1>
+	</div>
+	<div class='nav-right'>
+		<%= link_to 'New Videolink', new_videolink_path %>
+	</div>
 </nav>
 
 <%= yield %>
