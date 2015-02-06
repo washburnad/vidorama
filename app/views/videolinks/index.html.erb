@@ -1,6 +1,6 @@
 <ul>
 	<% @videolinks.each do |link| %>
-		<li class="nav"><%= link_to link.title, "#", :class => "button" %></li>
+		<li class="nav"><%= link_to link.title, videolink_path(link), :class => "button" %></li>
 	<% end %>
 </ul>
 

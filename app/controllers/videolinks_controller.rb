@@ -17,6 +17,10 @@ class VideolinksController < ApplicationController
 		end
 	end
 
+	def show
+		@videolink = Videolink.find(params[:id])
+	end
+
 
 	private
 

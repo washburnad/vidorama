@@ -55,7 +55,7 @@ a:hover {
 
 .form-box {
 	background: rgba(0,0,0,0.3);
-	width: 80%;
+	width: 60%;
 	height: auto;
 	margin: 40px auto;
 	padding: 20px;
@@ -71,17 +71,15 @@ a:hover {
 	}
 }
 
-.video-frame div,
-.video-frame iframe {
-	margin-left: 50px;
-}
-
-.video-frame {
-	display: none;
-}
-
-.video-frame:target {
-	display: block;
+.video-box {
+	background: rgba(0,0,0,0.3);
+	width: 60%;
+	height: auto;
+	margin: 40px auto;
+	padding: 20px;
+	color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 5px;
 }
 
 .button {
