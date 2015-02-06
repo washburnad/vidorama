@@ -1,5 +1,6 @@
 Vidorama::Application.routes.draw do
-  root "pages#index"
+  root "videolinks#index"
+  resources :videolinks
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
